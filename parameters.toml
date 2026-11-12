@@ -1,0 +1,33 @@
+# Default production geometry and integration settings.
+
+[grid]
+grid_size = 256
+dimensionless_box_size = 6.283185307179586
+
+[physics]
+xi = 2.5
+# The vacuum amplitude is derived from this total using the fitted f2(xi).
+target_total_amplitude = 2.1e-9
+# To override the built-in fit, set an explicit nonnegative value here:
+# f2 = 4.432229792469144e-7
+spectral_index = 0.965
+pivot_mpc_inverse = 0.05
+k_star_h_mpc_inverse = 0.003141592653589793
+hubble_h = 0.68
+
+[integration]
+late_time_x_min = 0.09
+number_of_log_points = 33
+include_shell_entries = true
+shell_entry_offset_fraction = 0.0
+quadrature = "log_trapezoid"
+decimal_precision = 25
+dealias = true
+padding_rule = "three_halves"
+mode_backend = "direct"
+
+[realization]
+inverse_decay_seed = 20260804
+vacuum_seed = 20260805
+output = "outputs/sourced_seed_20260804.npz"
+save_helicity = false

@@ -1,0 +1,16 @@
+# Generated realizations and interpolation caches
+outputs/
+tables/
+
+# Python build and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Local environments and editor files
+.venv/
+venv/
+*~
