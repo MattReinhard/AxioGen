@@ -142,3 +142,7 @@ python -m pytest -q
 The test suite contains focused generator and numerical-unit tests only. It
 does not include notebooks, convergence campaigns, plotting scripts, or
 production outputs.
+
+## Acknowledgment
+
+This code was developed with assistance from OpenAI Codex.
